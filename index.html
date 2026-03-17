@@ -914,8 +914,8 @@ function drawSlide10(){
   // Calculer les scores 2020 sur les BV déjà dépouillés en 2026
   var d20=DATA_1T.filter(function(r){return depBVs.indexOf(r.bv)>=0;});
   var s1t=function(k){return d20.reduce(function(a,r){return a+(r[k]||0);},0);};
-  var exp20=s1t('exprimes');
-  var bm1t=s1t('iriart')+s1t('etcheto');  // Iriart+Bergé 2020
+  var exp1t=s1t('exprimes');
+  var bm1t=s1t('iriart')+s1t('etcheto');  // Iriart+Etcheto 1er tour
 
     // Définition des comparaisons 2T vs 1T
   var COMPS=[
@@ -982,10 +982,9 @@ function drawSlide10(){
     var p20=cp.v1t!==null?pct(cp.v1t,cp.exp1t):null;
     var bw20=(p20!==null&&mx>0)?Math.max(p20/mx*86,p20>0?0.5:0):0;
     var wide20=bw20>14;
-    var hexLight20=hexLight(cp.hex);
     var row20=document.createElement('div'); row20.className='brow brow-2020';
     var inner20='<div class="blbl">';
-    inner20+='<span class="cmp-lbl20">'+cp.lbl20+'</span>';
+    inner20+='<span class="cmp-lbl20">'+cp.lbl1t+'</span>';
     inner20+='<span class="vx" style="color:var(--text3)">'+(cp.v1t!==null&&cp.v1t>0?fn(cp.v1t)+' voix':'')+'</span>';
     inner20+='</div>';
     inner20+='<div class="btrk"><div class="bline"></div>';
