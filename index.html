@@ -36,6 +36,7 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Source Sans 3','Se
 
 /* SLIDE 1 */
 #s1 .sbody{display:flex;flex-direction:column;flex:1;padding:clamp(8px,1.4vh,20px) clamp(20px,4vw,70px) clamp(28px,4.5vh,48px);gap:clamp(4px,.6vh,10px);overflow:hidden;min-height:0}
+#s1 .btrk{height:clamp(44px,8vh,90px)}
 .chart{flex:1;display:flex;flex-direction:column;justify-content:space-between;min-height:0}
 .brow{display:flex;align-items:center;flex:1;min-height:0}
 .blbl{width:clamp(160px,22vw,340px);flex-shrink:0;padding-right:clamp(8px,1.2vw,20px);text-align:right}
@@ -94,12 +95,13 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Source Sans 3','Se
 
 /* SLIDE 10 — COMPARAISON 2020/2026 */
 #s10 .sbody{display:flex;flex-direction:column;flex:1;padding:clamp(4px,.7vh,10px) clamp(16px,3vw,50px) clamp(36px,5.5vh,52px);gap:clamp(2px,.3vh,5px);overflow:hidden;min-height:0}
-#s10 .sbody .chart10{flex:1;display:flex;flex-direction:column;justify-content:space-between;min-height:0;gap:0}
+#s10 .sbody .chart10{flex:1;display:flex;flex-direction:column;justify-content:space-evenly;min-height:0;gap:0}
 .cmp-group{display:flex;flex-direction:column;gap:0;flex:0 0 auto}
 #s10 .blbl{width:clamp(130px,18vw,270px);padding-right:clamp(6px,.9vw,14px)}
 #s10 .blbl .ln{font-size:clamp(11px,1.1vw,17px)}
 #s10 .blbl .cn{font-size:clamp(7px,.6vw,10px)}
 #s10 .brow{flex:0 0 auto}
+#s10 .btrk{height:clamp(36px,6.5vh,75px)}
 #s10 .bpct{font-size:clamp(11px,1.2vw,18px)}
 #s10 .bpct-o{font-size:clamp(11px,1.2vw,18px)}
 .cmp-year{font-size:clamp(7px,.58vw,10px);font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--text3);flex-shrink:0}
@@ -394,7 +396,7 @@ table.dtbl{border-collapse:collapse;width:100%;table-layout:fixed;height:100%}
 </div>
 <div id="s10" class="slide">
   <div class="header">
-    <div class="htitle"><h1>Comparaison 1er Tour / 2ème Tour 2026</h1><p>Périmètre BV dépouillés au 2ème tour</p></div>
+    <div class="htitle"><h1>Comparaison 1er Tour / 2ème Tour 2026 – Konparaketa: 2026ko 1. eta 2. itzulia</h1><p>Périmètre BV dépouillés au 2ème tour</p></div>
     <div class="hright">
       <button class="rbtn" id="rbtns10"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 4v6h-6M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>Actualiser</button>
       <div class="badge">
